@@ -42,22 +42,122 @@
             </div>
         </div>
     </nav>
-    <section class="flex overflow-hidden flex-col justify-center px-16 py-28 bg-white max-md:px-5 max-md:py-24">
-        <div class="flex flex-wrap gap-10 items-center w-full max-md:max-w-full">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/95334e929a904e00b3fee38bd91b5789/695e35fe9375ed813e9267c48b6e6e0ed2c5303c0a4eb46842040dcb8370ac1e?apiKey=95334e929a904e00b3fee38bd91b5789&" alt="Under construction illustration" class="object-contain flex-1 shrink self-stretch my-auto w-full aspect-[0.96] basis-0 min-w-[240px] max-md:max-w-full"
-            />
-            <div class="flex flex-col flex-1 shrink self-stretch my-auto basis-0 min-w-[240px] max-md:max-w-full">
-                <header class="flex flex-col w-full text-black max-md:max-w-full">
-                    <p class="self-start text-base font-semibold">We're working on it</p>
-                    <h1 class="mt-4 w-full text-5xl font-bold leading-[58px] max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">This page is undergoing updates!</h1>
-                </header>
-                <nav class="flex gap-6 items-center self-start mt-8 text-base text-black">
-                    <a href="javascript:history.back()" class="overflow-hidden gap-2 self-stretch px-6 py-3 my-auto border border-black border-solid max-md:px-5" role="button">Go Back to Previous Page</a>
-                </nav>
-            </div>
+    <section id="join-us" class="py-12 bg-white text-gray-800">
+      <div class="max-w-6xl mx-auto px-6">
+        <h1 class="text-4xl font-bold text-blue-800 mb-6">Join Us</h1>
+        <p class="text-lg mb-8 max-w-3xl">
+          Thank you for considering membership in the <strong>Business and Management Consultants Association of the Philippines (BMCAP)</strong>.
+          As a registered non-stock, non-profit professional organization, we welcome consultants and aspiring experts who share our values of service, trust, agility, diversity, and integrity.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <!-- Apply for Membership -->
+          <div class="border border-blue-200 p-6 rounded-xl shadow-sm bg-blue-50">
+            <h2 class="text-2xl font-semibold text-blue-800 mb-2">📝 Apply for Membership</h2>
+            <p class="mb-4 text-sm">
+              If you are a certified or aspiring consultant in business, management, or a related field—and are committed to professional excellence and ethical practice—we invite you to submit your application.
+            </p>
+            <ul class="list-disc ml-6 text-sm mb-4">
+              <li>Download and complete the <a href="/forms/BMCAP_Application_Form.pdf" class="underline text-blue-700">Application Form</a></li>
+              <li>Prepare your CV, endorsement letter, certification (if applicable), ID, and recent photo</li>
+              <li>Fill out the <a href="/forms/BMCAP_COI_Form.pdf" class="underline text-blue-700">Conflict of Interest Declaration</a></li>
+              <li>Submit documents to <a href="mailto:contact@bmcap.ph" class="underline text-blue-700">contact@bmcap.ph</a></li>
+            </ul>
+            <a href="membership.html" id="membership-details-link" class="bg-blue-800 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
+              View Membership Details
+            </a>
+          </div>
+
+          <!-- Talk to a Member -->
+          <div class="border p-6 rounded-xl shadow-sm bg-gray-100">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">🤝 Connect with a Member</h2>
+            <p class="mb-4 text-sm">
+              If you still have questions or want to hear firsthand how BMCAP has helped consultants grow professionally, we'd be happy to connect you with one of our members for a brief conversation.
+            </p>
+            <p class="text-sm mb-4">Use the form below and we'll schedule a call that fits your availability.</p>
+            <a href="#connect-member" class="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-700 transition">
+              Fill Out the Form Below
+            </a>
+          </div>
         </div>
+
+        <!-- Connect Form -->
+        <div id="connect-member" class="bg-white py-10 border-t border-gray-200">
+          <h2 class="text-2xl font-bold text-blue-800 mb-4">Connect with a Member</h2>
+          <p class="text-md mb-6 max-w-2xl">
+            Please complete the form below to request a conversation with a current BMCAP member. We'll get back to you as soon as possible.
+          </p>
+
+          <form id="connect-form" class="bg-gray-50 p-6 rounded-lg shadow-md max-w-2xl">
+            <div class="mb-4">
+              <label for="name" class="block font-medium mb-1">Full Name <span class="text-red-500">*</span></label>
+              <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="block font-medium mb-1">Email Address <span class="text-red-500">*</span></label>
+              <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="mb-4">
+              <label for="mobile" class="block font-medium mb-1">Mobile Number</label>
+              <input type="tel" id="mobile" name="mobile" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div class="mb-4">
+              <label for="message" class="block font-medium mb-1">Your Message or Inquiry</label>
+              <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Let us know how we can help..."></textarea>
+            </div>
+
+            <div class="text-right">
+              <button type="submit" class="bg-blue-800 text-white font-semibold px-6 py-2 rounded hover:bg-blue-700 transition">
+                Submit Request
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="mt-12 border-t pt-6 text-sm">
+          <h3 class="text-xl font-semibold text-blue-800 mb-2">Need Assistance?</h3>
+          <p>Email us at <a href="mailto:contact@bmcap.ph" class="underline text-blue-700">contact@bmcap.ph</a>.</p>
+        </div>
+      </div>
     </section>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('nav a[href]');
+  const currentPath = window.location.pathname.split('/').pop();
+  navLinks.forEach(link => {
+    const linkPath = link.getAttribute('href').split('/').pop();
+    if (linkPath === currentPath) {
+      link.classList.add('text-blue-700', 'font-semibold');
+    } else {
+      link.classList.remove('text-blue-700', 'font-semibold');
+    }
+  });
 
+  // Handle Connect Form submission
+  const connectForm = document.getElementById('connect-form');
+  if (connectForm) {
+    connectForm.addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent default form submission
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const mobile = document.getElementById('mobile').value;
+      const message = document.getElementById('message').value;
+
+      const subject = 'Connect with a BMCAP Member Request';
+      const body = `Full Name: ${name}\nEmail: ${email}\nMobile: ${mobile}\nMessage: ${message}`;
+
+      const mailtoLink = `mailto:contact@bmcap.ph?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.location.href = mailtoLink;
+    });
+  }
+});
+</script>
 </html>
